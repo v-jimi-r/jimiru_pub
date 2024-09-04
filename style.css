@@ -45,3 +45,77 @@
 .number ul li {
     list-style-type: none;
 }
+
+hr.dot {
+    border-top: 4px dotted #aaa;
+    background-color: #fff;
+    width: 90%;
+    margin: 8% 5%;
+}
+
+.box-title-gray{
+	background-color:#fff; /* ボックス背景色 */
+	padding:2em; /* ボックス内側余白 */
+	margin:2em 0; /* ボックス内側余白 */
+	position:relative; /* 配置(ここを基準に) */
+	border: 2px solid #7b7c7d;/* ボックスの線 (太さ・種類・色)*/
+}
+.box-title-gray .box-title {
+	background-color:#fff; /* タイトル背景色 */
+	font-size: 1.5em;/* タイトル文字の大きさ */
+	font-weight:800;
+	color: #7b7c7d; /* タイトル文字色 */
+	padding: 0 5px;/*タイトルの余白*/
+	line-height: 1;/*タイトルの行の高さ*/
+	position:absolute;/* 配置(ここを動かす) */
+	top: -12px; /*上からの距離*/
+	left: 20px; /*左からの距離*/
+}
+
+/* ダイアログボックスのスタイリング */
+#modalDialog {
+    width: 26em;         /* 幅 */
+    max-height: 50%;   /* 高さ */
+    border: none;      /* ボーダー */
+    border-radius: 4px;/* 角丸 */
+    box-shadow: 0 0 24px 4px rgba(0, 0, 0, 0.4);/* 影 */
+    padding: 0;          /* パディング */
+    margin: 10% auto;
+  }
+  /* 背景 */
+  #modalDialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.4); /* 半透明の黒で覆う */
+  }
+  /* ボディ */
+  #modalDialog .body {
+    background-color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  /* フッタ */
+  #modalDialog .footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: sticky;/* スクロール時に固定 */
+    bottom: 0;
+  }
+  /* ボタン */
+  #modalDialog .button {
+    width: 8em;
+    height: 2.4em;
+    border-radius: 4px;
+  }
+  #modalDialog .button:hover {
+    opacity: 0.8;
+  }
+  #modalDialog .button.ok {
+    background-color: #0075c2;
+    border: none;
+    color: #fff;
+  }
+  #modalDialog .button.ng {
+    background-color: #fff;
+    border: 1px solid;
+    color: #444;
+  }
